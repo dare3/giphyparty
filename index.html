@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Giphy Party!</title>
+  <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
+</head>
+<style>
+  .gif-img {
+      width: 100%; /* Ensure the image takes up the full width of its container */
+      height: 200px; /* Set a fixed height */
+      object-fit: cover; /* Ensure the GIF fits within the dimensions */
+      border: 1px solid #ddd; /* Add a border */
+      border-radius: .25rem; /* Add rounded corners */
+      margin: 5px; /* Add some space around the images */
+  }
+</style>
+
+<body>
+  
+
+<div class="container">
+  <h1 class="text-center mb-4">GIPHY PARTY</h1>
+  <form id="search-form" class="form-inline d-flex justify-content-center mb-4">
+      <input type="text" id="search-term" class="form-control mr-2" placeholder="Enter search term">
+      <button type="submit" class="btn btn-primary mr-2">Search</button>
+      <button type="button" id="clear-gifs" class="btn btn-danger">Clear GIFs</button>
+  </form>
+  <div id="gif-container" class="row"></div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.js"></script>
+<script src="app.js"></script>
+</body>
+
+</html>
